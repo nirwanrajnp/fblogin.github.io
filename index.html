@@ -7,10 +7,10 @@
 <script>
     window.fbAsyncInit = function() {
       FB.init({
-        appId      : '{your-app-id}',
+        appId      : '1156274131959620',
         cookie     : true,
         xfbml      : true,
-        version    : '{api-version}'
+        version    : 'v2.7'
       });
         
       FB.AppEvents.logPageView();   
@@ -33,11 +33,13 @@ function checkLoginState() {
   </script>
     <body>
         <p>This is an example of a simple HTML page with one paragraph.</p>
+        <div id="fb-root">
 
 
 <fb:login-button 
 scope="public_profile,email"
 onlogin="checkLoginState();">
 </fb:login-button>
+</div>
     </body>
 </html>
